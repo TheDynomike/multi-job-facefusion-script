@@ -4,6 +4,6 @@ Add `tk` to the requirements.txt file in the facefusion directory (See example r
 
 In the facefusion directory, activate your virtual environment.
 
-Run `pip install requirements.txt`
+Run `pip install -r requirements.txt`
 
 Run `python multi_job.py`
