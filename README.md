@@ -16,4 +16,16 @@ In the facefusion directory, activate your virtual environment.
 
 Run `pip install -r requirements.txt`
 
+# Run it
+
 Run `python multi_job.py`
+
+Click Find Image Source(s) button to use file explorer to find your source images
+
+Click Find Video Source(s) button to use file explorer to find your target videos
+
+Click Execute to begin
+
+The logs will not show since I haven't done the correct piping for subprocesses
+
+Once a fusion is complete, you'll see a "Subprocess executed successfully for argument" log
