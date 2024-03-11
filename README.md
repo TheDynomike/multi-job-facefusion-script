@@ -4,6 +4,8 @@ This script uses the tkinter library to provide the user with an easy to use GUI
 
 This tool will not pass any configuration args to the underlying facefusion cli command. You must alter your facefusion.ini with your desired configuration. See the example facefusion.ini in this repo.
 
+You may use the example facefusion.ini in this repo by replacing the facefusion.ini file in your facefusion directory.
+
 # Setup
 
 Copy the multi_job.py file to your facefusion directory (should be same location as the run.py).
