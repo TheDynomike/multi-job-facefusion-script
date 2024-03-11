@@ -8,6 +8,8 @@ You may use the example facefusion.ini in this repo by replacing the facefusion.
 
 # Setup
 
+This tool assumes you've already got facefusion up and running. If not, please follow the facefusion repo for the installation instructions.
+
 Copy the multi_job.py file to your facefusion directory (should be same location as the run.py).
 
 In the facefusion directory, activate your virtual environment.
