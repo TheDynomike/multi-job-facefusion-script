@@ -29,3 +29,5 @@ Click Execute to begin
 The logs will not show since I haven't done the correct piping for subprocesses
 
 Once a fusion is complete, you'll see a "Subprocess executed successfully for argument" log
+
+![image](https://github.com/TheDynomike/multi-job-facefusion-script/assets/10679481/41013e4d-15bb-4e2b-9d26-f55ecb9ae9e3)
