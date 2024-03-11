@@ -10,11 +10,9 @@ You may use the example facefusion.ini in this repo by replacing the facefusion.
 
 Copy the multi_job.py file to your facefusion directory (should be same location as the run.py).
 
-Add `tk` to the requirements.txt file in the facefusion directory (See example requirements.txt here).
-
 In the facefusion directory, activate your virtual environment.
 
-Run `pip install -r requirements.txt`
+Run `pip install tk`
 
 # Run it
 
