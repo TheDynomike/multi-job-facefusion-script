@@ -63,7 +63,7 @@ open_img_button = tk.Button(root, text="Find Image Source(s)", command=open_imag
 open_img_button.grid(row=3, column=0, columnspan=2, padx=25, pady=5)
 
 # Create a button to open file explorer
-open_vid_button = tk.Button(root, text="Find Video Source(s)", command=open_video_file_explorer)
+open_vid_button = tk.Button(root, text="Find Video Target(s)", command=open_video_file_explorer)
 open_vid_button.grid(row=4, column=0, columnspan=2, padx=25, pady=5)
 
 # Execute Button
