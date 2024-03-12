@@ -31,3 +31,11 @@ The logs will not show since I haven't done the correct piping for subprocesses
 Once a fusion is complete, you'll see a "Subprocess executed successfully for argument" log
 
 ![image](https://github.com/TheDynomike/multi-job-facefusion-script/assets/10679481/41013e4d-15bb-4e2b-9d26-f55ecb9ae9e3)
+
+# Video Trimmer Tool
+
+Use this to trim your videos. Should be self-explanatory once you see the UI. 
+
+Choose a video, adjust the sliders start and finish times.
+
+Click Trim and you can open the folder location of the output video in the output video line [Open Folder].
