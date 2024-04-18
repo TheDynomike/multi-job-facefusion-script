@@ -1,43 +1,71 @@
-# Description
+[general]
+source_paths =
+target_path =
+output_path = D:\yt\stls\swaps\tmp
 
-This script uses the tkinter library to provide the user with an easy to use GUI to select source images and target videos for facefusion CLI execution.
+[misc]
+force_download =
+skip_download =
+headless =
+log_level =
 
-Essentially, it will allow you to run multiple videos on facefusion. 
+[execution]
+execution_providers = cuda
+execution_thread_count = 27
+execution_queue_count = 2
 
-This tool will not pass any configuration args to the underlying facefusion cli command. You must alter your facefusion.ini with your desired configuration. See the example facefusion.ini in this repo.
+[memory]
+video_memory_strategy = tolerant
+system_memory_limit =
 
-You may use the example facefusion.ini in this repo by replacing the facefusion.ini file at the top-level of the facefusion directory (same location as run.py).
+[face_analyser]
+face_analyser_order = left-right
+face_analyser_age = adult
+face_analyser_gender = female
+face_detector_model =
+face_detector_size =
+face_detector_score = .35
+face_landmarker_score =
 
-# Setup
+[face_selector]
+face_selector_mode = reference
+reference_face_position =
+reference_face_distance =
+reference_frame_number =
 
-This tool assumes you've already got facefusion up and running. If not, please follow the facefusion repo for the installation instructions.
+[face_mask]
+face_mask_types = box region
+face_mask_blur = 0.3
+face_mask_padding = 0 0 0 0
+face_mask_regions = skin left-eyebrow right-eyebrow left-eye glasses right-eye nose mouth upper-lip lower-lip
 
-Copy the multi_job.py file to your facefusion directory (should be same location as the run.py).
+[frame_extraction]
+trim_frame_start =
+trim_frame_end =
+temp_frame_format = bmp
+keep_temp =
 
-In the facefusion directory, activate your virtual environment.
+[output_creation]
+output_image_quality =
+output_image_resolution =
+output_video_encoder =
+output_video_preset = veryfast
+output_video_quality = 80
+output_video_resolution = 1280x720
+output_video_fps = 30
+skip_audio =
 
-Run `pip install tk`
+[frame_processors]
+frame_processors = face_swapper face_enhancer
+face_debugger_items =
+face_enhancer_model = gfpgan_1.4
+face_enhancer_blend = 80
+face_swapper_model = inswapper_128_fp16
+frame_colorizer_model =
+frame_colorizer_blend =
+frame_enhancer_model =
+frame_enhancer_blend =
+lip_syncer_model =
 
-# Run it
-
-Run `python multi_job.py`
-
-Click Find Image Source(s) button to use file explorer to find your source images
-
-Click Find Video Source(s) button to use file explorer to find your target videos
-
-Click Execute to begin
-
-The logs will not show since I haven't done the correct piping for subprocesses
-
-Once a fusion is complete, you'll see a "Subprocess executed successfully for argument" log
-
-![image](https://github.com/TheDynomike/multi-job-facefusion-script/assets/10679481/41013e4d-15bb-4e2b-9d26-f55ecb9ae9e3)
-
-# Video Trimmer Tool
-
-Use this to trim your videos. Should be self-explanatory once you see the UI. 
-
-Choose a video, adjust the sliders start and finish times.
-
-Click Trim and you can open the folder location of the output video in the output video line [Open Folder].
+[uis]
+ui_layouts =
