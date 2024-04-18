@@ -7,13 +7,12 @@ import cv2
 class VideoTrimmerApp:
     def __init__(self, master):
         self.master = master
-        self.master.title("Video Trimmer")
 
         self.frame = tk.Frame(self.master)
         self.frame.pack()
 
         self.input_label = tk.Label(self.frame, text="Input Video:")
-        self.input_label.grid(row=0, column=0)
+        self.input_label.grid(row=0, column=0, pady=20)
 
         self.input_entry = tk.Entry(self.frame, width=50)
         self.input_entry.grid(row=0, column=1)
@@ -22,7 +21,7 @@ class VideoTrimmerApp:
         self.browse_button.grid(row=0, column=2)
 
         self.output_label = tk.Label(self.frame, text="Output Video:")
-        self.output_label.grid(row=1, column=0)
+        self.output_label.grid(row=1, column=0, pady=20)
 
         self.output_entry = tk.Entry(self.frame, width=50)
         self.output_entry.grid(row=1, column=1)
@@ -43,7 +42,7 @@ class VideoTrimmerApp:
         self.end_slider.grid(row=3, column=1, sticky="ew")
 
         self.trim_button = tk.Button(self.frame, text="Trim Video", command=self.trim_video)
-        self.trim_button.grid(row=4, column=1)
+        self.trim_button.grid(row=4, column=1, pady=20)
 
         self.video_duration = 0
 
@@ -103,10 +102,5 @@ class VideoTrimmerApp:
         except subprocess.CalledProcessError as e:
             messagebox.showerror("Error", f"Error occurred: {e}")
 
-def main():
-    root = tk.Tk()
-    app = VideoTrimmerApp(root)
-    root.mainloop()
-
-if __name__ == "__main__":
-    main()
+    def start(self):
+        self.master.mainloop()
